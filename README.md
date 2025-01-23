@@ -35,7 +35,7 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
 
 ### [+] assumptions
 - onclicking the one stop icon you are redirecting to homepage
-- prices are not accurate to market trend
+- prices are rated monthly and some varies according to product
 - dashboard analytics and sign up for free buttons are simply assumed
 - some of the services blocked due to un-availability of slots
 
