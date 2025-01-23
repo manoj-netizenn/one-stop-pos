@@ -14,7 +14,7 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
  - react
    
 ### [+] Installation
- -`git clone https://github.com/manoj-netizenn/one-stop-pos`
+ - `git clone https://github.com/manoj-netizenn/one-stop-pos`
  - `cd "project directory"`
  - `npm install`
 
@@ -23,10 +23,11 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
 
 
 ### [+] Features
- - dashboard page
- - cart page 
+ - catalog page
+ - cart page
+ - customer details page
  - checkout page
- - payments page
+ - recipt page
 
 
 ### [+] Screenshots
