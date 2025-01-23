@@ -9,13 +9,15 @@
 ### [+] Description
 A front-end application for a Point of Sale (POS) system, designed to provide an intuitive interface for offering services such as event planning, yoga sessions. This application supports functionalities for add to cart ,edit details in cart and payment page and generates receipt
 
+### [+] Installation
+ - `cd "project directory"`
+ - `npm install`
 
 ### [+] Usage
- - `npm install `
  - `npm start run`
 
 ### [+] Screenshot
-![screenshot](dsfdf)
+![screenshot](https://github.com/manoj-netizenn/one-stop-pos/blob/main/Screenshot%202025-01-23%20193453.png)
 
 ### [+] Features
  - dashboard page
