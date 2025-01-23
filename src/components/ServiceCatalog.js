@@ -100,7 +100,7 @@ const services = [
     id: 10,
     name: "Professional Babysitting",
     description: "Experienced and certified babysitters for childcare needs",
-    price: 800.0,
+    price: 8000.0,
     duration: "240 min",
     icon: <ChildCareIcon />,
     color: "#ff4d4f", // Red
