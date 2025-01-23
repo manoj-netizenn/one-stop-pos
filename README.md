@@ -1,15 +1,18 @@
 <h2 align="center"><u>one stop app</u></h2>
 
 
-<h4 align="center"> inventory for services </h4>
 
 <p align="center">
 <br>
 </p>
 
 ### [+] Description
-A front-end application for a Point of Sale (POS) system, designed to provide an intuitive interface for offering services such as event planning, yoga sessions. This application supports functionalities for add to cart ,edit details in cart and payment page and generates receipt
+A front-end application for a Point of Sale (POS) system, designed to provide an intuitive interface for offering services such as event planning, yoga sessions. This application supports functionalities for add to cart ,edit details in cart and payment page and generating receipt
 
+### [+] Requirements
+ - npm
+ - react
+   
 ### [+] Installation
  - `cd "project directory"`
  - `npm install`
@@ -17,9 +20,6 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
 ### [+] Usage
  - `npm start run`
 
-### [+] Screenshot
-![screenshot]()
-compatiblity accross mobile devices
 
 ### [+] Features
  - dashboard page
@@ -27,12 +27,14 @@ compatiblity accross mobile devices
  - checkout page
  - payments page
 
-### [+] Requirements
- - npm
- - react
+
+### [+] Screenshots
+![screenshot](https://github.com/manoj-netizenn/one-stop-pos/blob/main/image.png)
+
 
 ### [+] assumptions
-onclicking the icon you are redirecting to homepage
-prices are not accurate to market trend
-dashboard analytics and sign up for free buttons are the simply assumed
+- onclicking the one stop icon you are redirecting to homepage
+- prices are not accurate to market trend
+- dashboard analytics and sign up for free buttons are simply assumed
+- some of the services blocked due to un-availability of slots
 
