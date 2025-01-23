@@ -14,6 +14,7 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
  - react
    
 ### [+] Installation
+ -`git clone https://github.com/manoj-netizenn/one-stop-pos`
  - `cd "project directory"`
  - `npm install`
 
