@@ -21,8 +21,18 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import CloseIcon from "@mui/icons-material/Close";
+import Logo from "./Logo";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-function Cart({ items, quantities, onQuantityChange, onRemove, onCheckout }) {
+function Cart({
+  items,
+  quantities,
+  onQuantityChange,
+  onRemove,
+  onCheckout,
+  onLogoClick,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleIncrement = (itemId) => {
@@ -48,16 +58,58 @@ function Cart({ items, quantities, onQuantityChange, onRemove, onCheckout }) {
     0
   );
 
+  const handleDrawerClose = () => {
+    setIsOpen(false);
+    if (window.innerWidth < 600) {
+      document.body.style.overflow = "auto";
+    }
+  };
+
+  const handleDrawerToggle = () => {
+    if (isOpen) {
+      handleDrawerClose();
+    } else {
+      setIsOpen(true);
+      if (window.innerWidth < 600) {
+        document.body.style.overflow = "hidden";
+      }
+    }
+  };
+
+  // Update Logo click handler
+  const handleLogoClickInCart = () => {
+    handleDrawerClose();
+    onLogoClick();
+  };
+
   const cartContent = (
     <>
       <Box sx={{ p: 2 }}>
-        <Typography
-          variant="h6"
-          gutterBottom
-          sx={{ display: "flex", alignItems: "center", gap: 1 }}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
         >
-          <ShoppingCartIcon /> Shopping Cart
-        </Typography>
+          <Box onClick={handleLogoClickInCart} sx={{ cursor: "pointer" }}>
+            <Logo size="medium" />
+          </Box>
+          <IconButton
+            onClick={handleDrawerClose}
+            sx={{ display: { xs: "block", sm: "none" } }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </Box>
+        <Button
+          startIcon={<ArrowBackIcon />}
+          onClick={handleLogoClickInCart}
+          sx={{ mt: 2 }}
+          fullWidth
+        >
+          Back to Services
+        </Button>
       </Box>
       <Divider />
       {items.length === 0 ? (
@@ -201,29 +253,63 @@ function Cart({ items, quantities, onQuantityChange, onRemove, onCheckout }) {
       <Fab
         color="primary"
         aria-label="cart"
-        onClick={() => setIsOpen(true)}
+        onClick={handleDrawerToggle}
         sx={{
           position: "fixed",
           bottom: { xs: 16, sm: 24 },
           right: { xs: 16, sm: 24 },
           zIndex: (theme) => theme.zIndex.drawer - 1,
+          transition: "transform 0.2s",
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
         }}
       >
-        <Badge badgeContent={totalItems} color="error">
-          <ShoppingCartIcon />
+        <Badge
+          badgeContent={totalItems}
+          color="error"
+          sx={{
+            "& .MuiBadge-badge": {
+              transition: "all 0.2s",
+            },
+          }}
+        >
+          <ShoppingCartIcon
+            sx={{
+              transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+              transition: "transform 0.3s",
+            }}
+          />
         </Badge>
       </Fab>
 
       <Drawer
         anchor="right"
         open={isOpen}
-        onClose={() => setIsOpen(false)}
+        onClose={handleDrawerClose}
         PaperProps={{
           sx: {
             width: { xs: "100%", sm: 400 },
             height: "100%",
             display: "flex",
             flexDirection: "column",
+            overflowY: "auto",
+          },
+        }}
+        ModalProps={{
+          keepMounted: true,
+          onBackdropClick: handleDrawerClose,
+          sx: {
+            "& .MuiBackdrop-root": {
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            },
+          },
+        }}
+        sx={{
+          "& .MuiDrawer-paper": {
+            borderRadius: { xs: "16px 16px 0 0", sm: 0 },
+            height: { xs: "calc(100% - 56px)", sm: "100%" },
+            top: { xs: "auto", sm: 0 },
           },
         }}
       >

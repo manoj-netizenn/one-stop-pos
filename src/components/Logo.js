@@ -25,8 +25,8 @@ function Logo({ size = "medium", color = "primary", onClick }) {
         display: "flex",
         alignItems: "center",
         gap: 1,
-        cursor: onClick ? "pointer" : "default",
-        "&:hover": onClick && {
+        cursor: "pointer",
+        "&:hover": {
           opacity: 0.8,
         },
       }}

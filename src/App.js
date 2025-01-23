@@ -125,9 +125,12 @@ function App() {
 
   const handleLogoClick = () => {
     setStep("catalog");
-    setCart([]);
     setCustomerDetails(null);
     setReceipt(null);
+    setDrawerOpen(false);
+    if (window.innerWidth < 600) {
+      document.body.style.overflow = "auto";
+    }
   };
 
   const menuItems = [
@@ -152,7 +155,7 @@ function App() {
                 Choose Your Service
               </Typography>
               <Typography variant="body1" color="text.secondary">
-                Welcome to One Stop  Your all-in-one platform for managing
+                Welcome to One Stop Your all-in-one platform for managing
                 services, appointments, and much more
               </Typography>
             </Box>
@@ -382,6 +385,7 @@ function App() {
           onQuantityChange={handleQuantityChange}
           onRemove={handleRemoveFromCart}
           onCheckout={() => setStep("customer")}
+          onLogoClick={handleLogoClick}
         />
       </Box>
     </ThemeProvider>
