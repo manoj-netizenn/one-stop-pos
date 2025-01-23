@@ -1,4 +1,5 @@
 <h2 align="center"><u>one stop app</u></h2>
+![screenshot](https://github.com/manoj-netizenn/one-stop-pos/blob/main/Screenshot%202025-01-23%20193453.png)
 
 <h4 align="center"> inventory for services </h4>
 
