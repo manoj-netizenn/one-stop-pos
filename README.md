@@ -19,7 +19,8 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
  - `npm start run`
 
 ### [+] Screenshot
-![screenshot](https://github.com/manoj-netizenn/one-stop-pos/blob/main/Screenshot%202025-01-23%20193453.png)
+![screenshot](https://github.com/manoj-netizenn/one-stop-pos/blob/main/Screenshot%202025-01-23%20221323.png)
+compatiblity accross mobile devices
 
 ### [+] Features
  - dashboard page
