@@ -97,6 +97,9 @@ function App() {
         total: calculateTotal(),
       };
 
+      // Clear cart and quantities after successful payment
+      setCart([]);
+      setQuantities({});
       setReceipt(receiptData);
       setStep("receipt");
     } catch (error) {
@@ -206,7 +209,7 @@ function App() {
             <Receipt
               data={receipt}
               onNewOrder={() => {
-                setCart([]);
+                // Cart is already cleared after payment
                 setCustomerDetails(null);
                 setReceipt(null);
                 setStep("catalog");
