@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import StoreIcon from "@mui/icons-material/Store";
