@@ -5,7 +5,7 @@
 <br>
 </p>
 
-### [+] Description
+## [+] Description
 A front-end application for a Point of Sale (POS) system, designed to provide an intuitive interface for offering services such as event planning, yoga sessions. This application supports functionalities for add to cart ,edit details in cart and payment page and generating receipt
 
 ### [+] Requirements
