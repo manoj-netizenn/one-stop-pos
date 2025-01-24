@@ -1,4 +1,4 @@
-<h2 align="center"><u><a href="https://www.one-stop-pos.netifly.app/">one stop app</a></u></h2>
+<h2 align="center"><u>one stop app</u></h2>
 
 
 
