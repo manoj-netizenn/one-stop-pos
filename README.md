@@ -15,7 +15,9 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
    
 ### [+] Installation
  - make sure you have node and npm installed
- - `git clone https://github.com/manoj-netizenn/one-stop-pos`
+``` bash
+  git clone https://github.com/manoj-netizenn/one-stop-pos
+```
  - `cd "project directory"`
  - `npm install`
 
