@@ -1,7 +1,6 @@
 <h2 align="center"><u>one stop app</u></h2>
 
 
-
 <p align="center">
 <br>
 </p>
@@ -12,11 +11,14 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
 ### [+] Requirements
  - npm
  - react
+ - node installation
    
 ### [+] Installation
+ - make sure you have node and npm installed
  - `git clone https://github.com/manoj-netizenn/one-stop-pos`
  - `cd "project directory"`
  - `npm install`
+
 
 ### [+] Usage
  - `npm start run`
@@ -27,7 +29,7 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
  - cart page
  - customer details page
  - checkout page
- - recipt page
+ - receipt page
 
 
 ### [+] Screenshots
@@ -35,7 +37,7 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
 
 
 ### [+] assumptions
-- onclicking the one stop icon you are redirecting to homepage
+- on clicking the one stop icon you are redirecting to homepage
 - prices are rated monthly and some vary according to service
 - dashboard analytics and sign up for free buttons are simply assumed
 - some of the services blocked due to un-availability of slots
