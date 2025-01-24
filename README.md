@@ -7,7 +7,7 @@
 
 ## Table of Contents
 
-- [Description](#description)
+- [Description](#-description)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
