@@ -49,7 +49,7 @@ npm start run
 - if any dependency goes missing run
 
 ```bash
-npm install dependency-name
+npm i dependency-name -D
 ```
 
 ## [+] Features
