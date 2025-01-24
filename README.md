@@ -27,7 +27,9 @@ npm install
 
 
 ### [+] Usage
-```bash npm start run
+
+```bash 
+npm start run
 ```
  - if any dependency goes missing run 
  ```bash 
