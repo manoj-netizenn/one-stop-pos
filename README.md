@@ -8,12 +8,12 @@
 ## Table of Contents
 
 - [Description](#-description)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [assumptions](#assumptions)
+- [Features](#-features)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Screenshots](#-screenshots)
+- [assumptions](#-assumptions)
 
 ## [+] Description
 
