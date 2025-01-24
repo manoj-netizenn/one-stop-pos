@@ -61,7 +61,7 @@ const services = [
     duration: "90 min",
     icon: <RestaurantIcon />,
     color: "#eb2f96",
-    available: true,
+    available: false,
   },
 
   {
@@ -117,16 +117,7 @@ const services = [
     color: "#fa8c16", // Orange
     available: true,
   },
-  {
-    id: 9,
-    name: "Private Yoga Session",
-    description: "One-on-one personalized yoga training for focused attention",
-    price: 2000.0,
-    duration: "60 min",
-    icon: <SelfImprovementIcon />,
-    color: "#722ed1", // Purple
-    available: false,
-  },
+
   {
     id: 11,
     name: "Event Planning",
@@ -138,7 +129,6 @@ const services = [
     color: "#fa541c", // Orange red
     available: true,
   },
-  
 ];
 
 function ServiceCatalog({ onAddToCart }) {
