@@ -18,12 +18,19 @@ A front-end application for a Point of Sale (POS) system, designed to provide an
 ``` bash
   git clone https://github.com/manoj-netizenn/one-stop-pos
 ```
- - `cd "project directory"`
- - `npm install`
+ ```bash 
+ cd "project directory"
+ ```
+ bash```
+npm install
+ ```
 
 
 ### [+] Usage
- - `npm start run`
+bash ```npm start run
+```
+ - if any dependency goes missing run 
+ bash ```npm install dependency-name```
 
 
 ### [+] Features
